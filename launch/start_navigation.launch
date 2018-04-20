@@ -1,8 +1,7 @@
 <launch>
-  <arg name="map_resolution" default=0.05/>
 
   <!-- Run the map server -->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find processing_base)/maps/VGURoboticsLab.pgm $(arg map_resolution)"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find processing_base)/maps/VGURoboticsLab.yaml"/>
 
   <!--- Run AMCL -->
   <include file="$(find amcl)/examples/amcl_diff.launch" />
@@ -15,5 +14,5 @@
     <rosparam file="$(find processing_base)/configurations/base_local_planner_params.yaml" command="load" />
   </node>
 
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find processing_base)/rviz/mapping.rviz"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find processing_base)/rviz/navigation.rviz"/>
 </launch>
