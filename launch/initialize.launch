@@ -1,0 +1,6 @@
+<launch>
+  
+  <node pkg="processing_base" type="laser_link_broadcaster" name="laser_link_broadcaster" required="true"/>
+  <node pkg="processing_base" type="odometry_broadcaster" name="odometry" required="true"/>
+
+</launch>
