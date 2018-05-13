@@ -10,6 +10,7 @@
     <param name="odom_frame" value="odom"/>
   </node> -->
 
+
   <include file="$(find hector_mapping)/launch/mapping_default.launch">
     <arg name="base_frame" value="base_link" />
     <arg name="odom_frame" value="odom" />
