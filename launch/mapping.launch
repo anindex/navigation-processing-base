@@ -13,7 +13,7 @@
 
   <include file="$(find hector_mapping)/launch/mapping_default.launch">
     <arg name="base_frame" value="base_link" />
-    <arg name="odom_frame" value="odom" />
+    <arg name="odom_frame" value="base_link" />
     <arg name="scan_topic" value="scan" />
     <arg name="pub_map_odom_transform" value="true" />
   </include>
