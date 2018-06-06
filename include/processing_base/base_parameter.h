@@ -1,9 +1,9 @@
 #ifndef BASE_PARAMETER_H
 #define BASE_PARAMETER_H
 
-#define BASE_DIAMETER  171
-#define WHEEL_DIAMETER 65
-#define TICK_PER_ROUND 1496
+#define BASE_DIAMETER  171.0
+#define WHEEL_DIAMETER 65.0
+#define TICK_PER_ROUND 1496.0
 #define PI             3.141592654
 
 //temp robot parameter until we develop the URDF model

@@ -26,9 +26,9 @@ void callback(const geometry_msgs::Point32::ConstPtr& msg, ros::Publisher& odomP
   float deltaX = dcenter * cos(theta) / 1000.0; // change to meters
   float deltaY = dcenter * sin(theta) / 1000.0; // change to meters
 
-  float vx = deltaX / (msg->z * 1000.0); // change ms to seconds (m / s)
-  float vy = deltaY / (msg->z * 1000.0); // change ms to seconds (mm /s)
-  float omegaTheta = deltaTheta / (msg->z * 1000.0); // rad/s
+  float vx = deltaX / (msg->z / 1000.0); // change ms to seconds (m / s)
+  float vy = deltaY / (msg->z / 1000.0); // change ms to seconds (mm /s)
+  float omegaTheta = deltaTheta / (msg->z / 1000.0); // rad/s
 
   x += deltaX;
   y += deltaY;
