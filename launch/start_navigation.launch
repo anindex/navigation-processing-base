@@ -2,7 +2,7 @@
   <include file="$(find processing_base)/launch/initialize.launch" />
 
   <!-- Run the map server -->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find processing_base)/maps/EyeQ.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find processing_base)/maps/VGURoboticsLab.yaml"/>
 
   <!--- Run AMCL -->
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
