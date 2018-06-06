@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosserial_python" type="serial_node.py" name="client_interface" args="/dev/ttyACM0" required="true"/>
+  <node pkg="rqt_plot" type="rqt_plot" name="monitoring1" args="/encoder_ticks/x:y" output="screen"/>
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="controller" output="screen" />
+
+</launch>

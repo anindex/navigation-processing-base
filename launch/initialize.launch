@@ -1,5 +1,10 @@
 <launch>
-  
+  <node pkg="rosserial_python" type="serial_node.py" name="client_interface" args="/dev/ttyACM0" required="true"/>
+
+  <node pkg="urg_node" type="urg_node" name="laser_scanner" args="/dev/ttyACM1" required="true">
+    <param name="port" value="/dev/ttyACM1" />
+  </node>
+
   <node pkg="processing_base" type="laser_link_broadcaster" name="laser_link_broadcaster" required="true"/>
   <node pkg="processing_base" type="odometry_broadcaster" name="odometry" required="true"/>
 

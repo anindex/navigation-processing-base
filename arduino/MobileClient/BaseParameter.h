@@ -1,0 +1,13 @@
+#ifndef BASE_PARAMETER_H
+#define BASE_PARAMETER_H
+
+#define BASE_DIAMETER  171
+#define WHEEL_DIAMETER 65
+#define TICK_PER_ROUND 1496
+
+#define ENCODER_PUB_PERIOD 50
+#define MAX_INT   2100000000L
+
+
+#endif //end BASE_PARAMETER_H
+
