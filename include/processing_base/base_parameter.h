@@ -1,7 +1,7 @@
 #ifndef BASE_PARAMETER_H
 #define BASE_PARAMETER_H
 
-#define BASE_DIAMETER  173.0
+#define BASE_DIAMETER  199.0
 #define WHEEL_DIAMETER 65.0
 #define TICK_PER_ROUND 1496.0
 #define PI             3.141592654
