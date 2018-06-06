@@ -2,6 +2,7 @@ TrajectoryPlannerROS:
   max_vel_x: 0.3
   min_vel_x: 0.15
   max_vel_theta: 1.6
+  min_vel_theta: 1.1
   min_in_place_vel_theta: 1.3
 
   acc_lim_theta: 1.0
@@ -13,7 +14,7 @@ TrajectoryPlannerROS:
 
   holonomic_robot: false
 
-  path_distance_bias: 0.6            #default .6
+  path_distance_bias: 0.8            #default .6
   goal_distance_bias: 0.8             #default .8
   occdist_scale: 0.01                 #default 0.01
 
@@ -28,5 +29,5 @@ TrajectoryPlannerROS:
 
   dwa: false                          #I prefer trajectory rollout as I can see it in rviz
 
-  xy_goal_tolerance: 0.25              #default is 10cm but I think AMCL makes it too giggly for this to be safe
-  yaw_goal_tolerance: 0.2          #default is 0.05 rad (~3 degrees), I changed it to 5
+  xy_goal_tolerance: 0.2             #default is 10cm but I think AMCL makes it too giggly for this to be safe
+  yaw_goal_tolerance: 0.15          #default is 0.05 rad (~3 degrees), I changed it to 5
