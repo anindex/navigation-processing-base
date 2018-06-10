@@ -30,4 +30,4 @@ TrajectoryPlannerROS:
   dwa: false                          #I prefer trajectory rollout as I can see it in rviz
 
   xy_goal_tolerance: 0.2             #default is 10cm but I think AMCL makes it too giggly for this to be safe
-  yaw_goal_tolerance: 0.15          #default is 0.05 rad (~3 degrees), I changed it to 5
+  yaw_goal_tolerance: 0.2          #default is 0.05 rad (~3 degrees), I changed it to 5
