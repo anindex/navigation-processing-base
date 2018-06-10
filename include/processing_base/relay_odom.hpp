@@ -12,8 +12,8 @@
 
 void callback(const geometry_msgs::Point32::ConstPtr& msg, ros::Publisher& odomPub, tf::TransformBroadcaster& odom_broadcaster, float& x, float& y, float& theta)
 {
-  float dleft = (WHEEL_DIAMETER / 2) * (2 * PI * msg->x / TICK_PER_ROUND); // in mm
-  float dright = (WHEEL_DIAMETER / 2) * (2 * PI * msg->y / TICK_PER_ROUND);
+  float dleft = WHEEL_DIAMETER * PI * msg->x / TICK_PER_ROUND; // in mm
+  float dright = WHEEL_DIAMETER * PI * msg->y / TICK_PER_ROUND;
   float deltaTheta = (dright - dleft) / BASE_DIAMETER;
 
   float dcenter = (dleft + dright) / 2.0;
